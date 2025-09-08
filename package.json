@@ -1,9 +1,9 @@
 {
   "name": "mcp-telegram-bot-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Model Context Protocol (MCP) server for Telegram Bot API integration",
   "main": ".build/index.js",
-  "bin": ".build/cli.js",
+  "bin": ".build/index.js",
   "scripts": {
     "build": "npx tsc && shx chmod +x .build/*.js",
     "start": "node .build/index.js",
