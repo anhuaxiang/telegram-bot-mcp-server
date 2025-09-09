@@ -1,7 +1,7 @@
 
 {
   "name": "mcp-telegram-bot-server",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "index.js",
   "type": "module",
   "bin": {

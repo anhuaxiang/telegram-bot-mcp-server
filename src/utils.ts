@@ -137,8 +137,10 @@ export async function sendLongMessage(
       if (!isLastChunk) {
         await new Promise(resolve => setTimeout(resolve, 100));
       }
-    } catch (error) {
-      throw createTelegramError(error, `Failed to send message part ${i + 1}/${chunks.length}`);
+    } catch (error: any) {
+        throw new Error(
+    `Failed to send message part ${i + 1}/${chunks.length}: ${error.message || JSON.stringify(error)}`
+      );
     }
   }
 }
