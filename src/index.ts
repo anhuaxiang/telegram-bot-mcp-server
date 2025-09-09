@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { Telegraf } from "telegraf";
-import { createTelegramError, formatErrorForMCP, logError } from "./utils";
-import { registerAllTools } from "./tools";
+import { createTelegramError, formatErrorForMCP, logError } from "./utils.js";
+import { registerAllTools } from "./tools.js";
 
 const TELEGRAM_BOT_API_TOKEN = process.env.TELEGRAM_BOT_API_TOKEN;
 

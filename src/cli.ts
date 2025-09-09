@@ -4,7 +4,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { Telegraf } from "telegraf";
 import { z } from "zod";
-import { TelegramCommandSchema } from "./types";
+import { TelegramCommandSchema } from "./types.js";
 import { BotCommand } from "telegraf/types";
 import {
   sendLongMessage,
@@ -13,8 +13,8 @@ import {
   formatErrorForMCP,
   logError,
   handleToolError
-} from "./utils";
-import { registerAllTools } from "./tools";
+} from "./utils.js";
+import { registerAllTools } from "./tools.js";
 
 // CLI argument parsing
 const args = process.argv.slice(2);

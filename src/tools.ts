@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { Telegraf } from "telegraf";
 import { z } from "zod";
-import { TelegramCommandSchema } from "./types";
+import { TelegramCommandSchema } from "./types.js";
 import {
   sendLongMessage,
   sendPhotoWithLongCaption,
@@ -9,7 +9,7 @@ import {
   formatErrorForMCP,
   logError,
   handleToolError
-} from "./utils";
+} from "./utils.js";
 
 /**
  * Registers all Telegram bot tools with the MCP server
